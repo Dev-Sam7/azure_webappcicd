@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<label>Number 1: </label>
+<input type="text" value="" id="num1" />
+
+<label>Number 2: </label>
+<input type="text" value="" id="num2" />
+
+<input type="button" name="Sum" onclick="Sum()" />
+
+<div id="TotalValue"><label id="result"></label></div>
+
+<script type="text/javascript">
+    function Sum() {
+        debugger
+        var x = $("#num1").val();
+        var y = $("#num2").val();
+        x = parseInt(x);
+        y = parseInt(y);
+        var formData = {
+            num1: x,
+            num2: y
+        };
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("Sum","Home")',
+            //data: JSON.stringify ({
+            //    x: num1, y: num2
+            //}),
+            data: formData,
+            contentType: 'application/x-www-form-urlencoded',  //"application/json; charset=utf-8",
+            dataType: 'JSON',
+            success: function (data) {
+                alert(data.result);
+                //$("#TotalValue").val(data.result);
+                //$("#result").val(data.result);
+                //$("#TotalValue").show();
+                //document.getElementById('TotalValue').style.display = 'inline';
+                //alert(data.result);
+            },
+             error: function (ob, errStr) {
+                alert("An error occured.Please try again.");
+            }
+        });
+    }
+</script>

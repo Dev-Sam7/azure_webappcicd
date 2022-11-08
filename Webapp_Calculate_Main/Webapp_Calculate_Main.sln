@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webapp_Calculate_Main", "Webapp_Calculate_Main.csproj", "{FFD4BA85-0CFD-4887-AB3E-F56FE8FF3946}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webapp_Calculate_Test", "..\Webapp_Calculate_Test\Webapp_Calculate_Test.csproj", "{EE02DB98-96A3-4E75-B984-71C91C187BED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFD4BA85-0CFD-4887-AB3E-F56FE8FF3946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD4BA85-0CFD-4887-AB3E-F56FE8FF3946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD4BA85-0CFD-4887-AB3E-F56FE8FF3946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD4BA85-0CFD-4887-AB3E-F56FE8FF3946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE02DB98-96A3-4E75-B984-71C91C187BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE02DB98-96A3-4E75-B984-71C91C187BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE02DB98-96A3-4E75-B984-71C91C187BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE02DB98-96A3-4E75-B984-71C91C187BED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E546E58-1504-4434-805E-A43190A8EC3D}
+	EndGlobalSection
+EndGlobal
